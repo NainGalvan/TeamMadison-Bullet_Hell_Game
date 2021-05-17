@@ -1,0 +1,526 @@
+{
+    "StageStartTimes":
+    {
+        "stageOne": 15,
+        "stageTwo": 50,
+        "stageThree": 100,
+        "stageFour": 135
+    },
+    "entities":
+    {
+        "Player":
+        {
+            "maxHealth": 5,
+            "speed": 330,
+            "bullet": "Bullet",
+            "texture": "Player.png",
+            "timeBetweenShot": 0.1,
+            "bulletFormation": "UpwardLinearBulletFormation"
+        },
+        "Bat":
+        {
+            "speed": 350,
+            "bullet": "CovidGerm",
+            "texture": "Bat.png",
+            "timeBetweenShot": 0.9,
+            "maxTimeAlive": 5,
+            "bulletFormation": "TargetDownwardLinearBulletFormation",
+            "maxHealth": 3
+        },
+        "MurderHornet":
+        {
+            "speed": 300,
+            "bullet": "Stinger",
+            "texture": "MurderHornet.png",
+            "timeBetweenShot": 0.6,
+            "maxTimeAlive": 6,
+            "bulletFormation": "DownwardLinearBulletFormation",
+            "maxHealth": 5
+        },
+        "Karen":
+        {
+            "speed": 150,
+            "bullet": "GreenCloud",
+            "texture": "Karen.png",
+            "timeBetweenShot": 0.8,
+            "maxTimeAlive": 45,
+            "bulletFormation": "CircularBulletFormation",
+            "maxHealth": 35
+        },
+        "Covid":
+        {
+            "speed": 150,
+            "bullet": "BabyCovid",
+            "texture": "BigCovid.png",
+            "timeBetweenShot": 0.6,
+            "maxTimeAlive": 80,
+            "bulletFormation": "TargetDownwardLinearBulletFormation",
+            "maxHealth": 70
+        }
+    },
+    "waves":
+    {
+        "1-1":
+        {
+            "enemyType": "Bat",
+            "startTimeFromStage": 0,
+            "enemyAmount": 2,
+            "spawnLocation": [{"x": 75, "y": 650}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetDownwardLinearBulletFormation"
+        },
+        "1-2":
+        {
+            "enemyType": "Bat",
+            "startTimeFromStage": 10,
+            "enemyAmount": 2,
+            "spawnLocation": [{"x": 75, "y": 650}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetDownwardLinearBulletFormation"
+        },
+        "1-3":
+        {
+            "enemyType": "Bat",
+            "startTimeFromStage": 20,
+            "enemyAmount": 2,
+            "spawnLocation": [{"x": 75, "y": 650}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetDownwardLinearBulletFormation"
+        },
+        "1-4":
+        {
+            "enemyType": "MurderHornet",
+            "startTimeFromStage": 5,
+            "enemyMovementPattern": "PatternThree",
+            "enemyAmount": 3,
+            "spawnLocation": [{"x": 50, "y": 650},{"x": 225, "y": 750}, {"x":  400, "y": 850}],
+            "bulletFormation": "DownwardLinearBulletFormation"
+        },
+        "1-5":
+        {
+            "enemyType": "MurderHornet",
+            "startTimeFromStage": 15,
+            "enemyAmount": 3,
+            "spawnLocation": [{"x": 50, "y": 650},{"x": 225, "y": 750}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "DownwardLinearBulletFormation"
+        },
+        "1-6":
+        {
+            "enemyType": "MurderHornet",
+            "startTimeFromStage": 25,
+            "enemyAmount": 3,
+            "spawnLocation": [{"x": 50, "y": 650},{"x": 225, "y": 750}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "DownwardLinearBulletFormation"
+        },
+        "2-MidBoss":
+        {
+            "enemyType": "Karen",
+            "enemyAmount": 1,
+            "startTimeFromStage": 0,
+            "spawnLocation": [{"x": 250, "y": 650}],
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "TriangleTargetBulletFormation"
+        },
+        "3-7":
+        {
+            "enemyType": "Bat",
+            "startTimeFromStage": 0,
+            "enemyAmount": 2,
+            "spawnLocation": [{"x": 75, "y": 650}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetDownwardLinearBulletFormation"
+        },
+        "3-8":
+        {
+            "enemyType": "MurderHornet",
+            "startTimeFromStage": 5,
+            "enemyAmount": 3,
+            "spawnLocation": [{"x": 50, "y": 650},{"x": 225, "y": 750}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "DownwardLinearBulletFormation"
+        },
+        "3-9":
+        {
+            "enemyType": "Bat",
+            "startTimeFromStage": 10,
+            "enemyAmount": 2,
+            "spawnLocation": [{"x": 75, "y": 650}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetDownwardLinearBulletFormation"
+        },
+        "3-10":
+        {
+            "enemyType": "MurderHornet",
+            "startTimeFromStage": 15,
+            "enemyAmount": 3,
+            "spawnLocation": [{"x": 50, "y": 650},{"x": 225, "y": 750}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "DownwardLinearBulletFormation"
+        },
+        "3-11":
+        {
+            "enemyType": "Bat",
+            "startTimeFromStage": 20,
+            "enemyAmount": 2,
+            "spawnLocation": [{"x": 75, "y": 650}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetDownwardLinearBulletFormation"
+        },
+        "3-12":
+        {
+            "enemyType": "MurderHornet",
+            "startTimeFromStage": 25,
+            "enemyAmount": 3,
+            "spawnLocation": [{"x": 50, "y": 650},{"x": 225, "y": 750}, {"x":  400, "y": 850}],
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "DownwardLinearBulletFormation"
+        },
+        "4-Boss":
+        {
+            "enemyType": "Covid",
+            "enemyAmount": 1,
+            "startTimeFromStage": 0,
+            "spawnLocation": [{"x": 250, "y": 650}],
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "FanBulletFormation"
+        }
+    },
+    "behaviors":
+    {
+        "2-1":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 10,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "2-111":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 14,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternStatic",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "2-2":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 15,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        },
+        "2-3":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 16,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "2-311":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 20,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternStatic",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "2-4":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 21,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        },
+        "2-5":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 22,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "2-511":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 26,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternStatic",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "2-6":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 27,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        },
+        "2-7":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 28,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "2-8":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 33,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFive",
+            "bulletFormation": "TargetThreeDirectionBulletFormation"
+        },
+        "2-9":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 35,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "2-10":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 40,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFive",
+            "bulletFormation": "TargetThreeDirectionBulletFormation"
+        },
+        "2-11":
+        {
+            "enemyName": "Karen",
+            "startTimeFromStage": 42,
+            "speed": 150,
+            "timeBetweenShot": 50,
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        },
+        "4-1":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 9,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternStatic",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-111":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 10,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-2":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 11,
+            "speed": 150,
+            "timeBetweenShot": 0.8,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetDownwardLinearBulletFormation"
+        },
+        "4-3":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 20,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-311":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 24,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternStatic",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-4":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 25,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        },
+        "4-5":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 26,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-6":
+        {
+            "enemyName":"Covid",
+            "startTimeFromStage": 30,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "AxisXFlipAttack"
+        },
+        "4-7":
+        {
+            "enemyName":"Covid",
+            "startTimeFromStage": 33,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "FanBulletFormation"
+        },
+        "4-711":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 38,
+            "speed": 150,
+            "timeBetweenShot": 0.9,
+            "enemyMovementPattern": "PatternStatic",
+            "bulletFormation":  "CircularBulletFormation"
+        },
+        "4-8":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 39,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-9":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 40,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-10":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 43,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "AxisXFlipAttackRevert"
+        },
+        "4-11":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 45,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-12":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 50,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFive",
+            "bulletFormation": "TargetThreeDirectionBulletFormation"
+        },
+        "4-13":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 52,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-14":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 60,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "AxisYFlipAttack"
+        },
+        "4-15":
+        {
+            "enemyName":"Covid",
+            "startTimeFromStage": 63,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "FanBulletFormation"
+        },
+        "4-16":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 68,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFive",
+            "bulletFormation": "TargetThreeDirectionBulletFormation"
+        },
+        "4-17":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 70,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-18":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 72,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "AxisYFlipAttackRevert"
+        },
+        "4-19":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 74,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternThree",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "4-20":
+        {
+            "enemyName": "Covid",
+            "startTimeFromStage": 77,
+            "speed": 150,
+            "timeBetweenShot": 50,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        }
+    }
+}

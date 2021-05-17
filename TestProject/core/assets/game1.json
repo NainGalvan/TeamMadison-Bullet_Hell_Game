@@ -1,0 +1,141 @@
+{
+    "entities":
+    {
+        "Player":
+        {
+            "maxHealth": 5,
+            "speed": 330,
+            "bullet": "Bullet",
+            "texture": "Player.png",
+            "timeBetweenShot": 0.6,
+            "bulletFormation": "UpwardLinearBulletFormation"
+        },
+        "Bat":
+        {
+            "speed": 350,
+            "bullet": "CovidGerm",
+            "texture": "Bat.png",
+            "timeBetweenShot": 0.9,
+            "maxTimeAlive": 5,
+            "bulletFormation": "TargetDownwardLinearBulletFormation",
+            "maxHealth": 3
+        },
+        "MurderHornet":
+        {
+            "speed": 300,
+            "bullet": "Stinger",
+            "texture": "MurderHornet.png",
+            "timeBetweenShot": 0.6,
+            "maxTimeAlive": 6,
+            "bulletFormation": "DownwardLinearBulletFormation",
+            "maxHealth": 5
+        },
+        "Karen":
+        {
+            "speed": 150,
+            "bullet": "GreenCloud",
+            "texture": "Karen.png",
+            "timeBetweenShot": 0.8,
+            "maxTimeAlive": 45,
+            "bulletFormation": "CircularBulletFormation",
+            "maxHealth": 35
+        },
+        "Covid":
+        {
+            "speed": 150,
+            "bullet": "BabyCovid",
+            "texture": "BigCovid.png",
+            "timeBetweenShot": 0.6,
+            "maxTimeAlive": 60,
+            "bulletFormation": "TargetDownwardLinearBulletFormation",
+            "maxHealth": 70
+        }
+    },
+    "waves":
+    {
+        "MidBoss":
+        {
+            "enemyType": "Karen",
+            "enemyAmount": 1,
+            "spawnLocation": [{"x": 250, "y": 650}],
+            "startTime": 5,
+            "enemyMovementPattern": "PatternTwo",
+            "bulletFormation": "DownwardLinearBulletFormation"
+=======
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "TriangleTargetBulletFormation"
+>>>>>>> added diamond pattern, enemy position in json, added extra layer of inheritance between bullet & enemy patterns to have abstract MovementPattern
+        }
+    },
+    "behaviors":
+    {
+        "5":
+        {
+            "enemyName": "Karen",
+            "startTime": 15,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        },
+        "6":
+        {
+            "enemyName": "Karen",
+<<<<<<< HEAD
+            "startTime": 11,
+            "speed": 150,
+            "timeBetweenShot": 1,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetThreeDirectionBulletFormation"
+        },
+        "7":
+        {
+            "enemyName": "Karen",
+            "startTime": 20,
+            "speed": 150,
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        },
+        "8":
+        {
+            "enemyName": "Karen",
+            "startTime": 21,
+            "speed": 150,
+            "timeBetweenShot": 1,
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetThreeDirectionBulletFormation"
+        },
+        "9":
+=======
+            "startTime": 20,
+            "speed": 150,
+            "timeBetweenShot": 0.6,
+            "enemyMovementPattern": "PatternDiamond",
+            "bulletFormation": "CircularBulletFormation"
+        },
+        "3":
+>>>>>>> added diamond pattern, enemy position in json, added extra layer of inheritance between bullet & enemy patterns to have abstract MovementPattern
+        {
+            "enemyName": "Karen",
+            "startTime": 30,
+            "speed": 150,
+<<<<<<< HEAD
+            "timeBetweenShot": 0.005,
+            "enemyMovementPattern": "PatternFour",
+            "bulletFormation": "SlowTargetDownwardLinearBulletFormation"
+        },
+        "10":
+        {
+            "enemyName": "Karen",
+            "startTime": 31,
+            "speed": 150,
+            "timeBetweenShot": 1,
+=======
+            "timeBetweenShot": 0.6,
+>>>>>>> added diamond pattern, enemy position in json, added extra layer of inheritance between bullet & enemy patterns to have abstract MovementPattern
+            "enemyMovementPattern": "PatternOne",
+            "bulletFormation": "TargetThreeDirectionBulletFormation"
+        }
+    }
+}
